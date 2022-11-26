@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<H1 align="center"> Personajes </H1>
+<body>
+  <main>
+    {% for persona in personajes %}
+    <div class="container">
+    
+      <div class="container__personaje">
+      <img src="{{persona.image}}" alt="" >
+      </div>
+        <div class="contenido">
+          <a href="{{ url_for('personajes_ruta.perfiles')}}"> 
+          <h2><strong>{{persona.name}}</strong></h2>
+          <h4><strong>{{persona.status}}-{{persona.species}}</strong></h4>
+          <h4><strong>Origen: {{persona.origin}}</strong></h4>
+          <h4><strong>Visto por ultima vez: {{persona.last}}</strong></h4>
+          <h4><strong>Creado en: {{persona.created}}</strong></h4>
+          </a>
+        </div>
+        <br>
+              
+    </div>
+
+    {% endfor%}
+
+    </div>
+  </main>
+</body>
+{% endblock content%}

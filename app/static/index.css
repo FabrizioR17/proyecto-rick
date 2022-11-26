@@ -1,0 +1,25 @@
+.container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #deb841;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 600px;
+  height: 250px;
+}
+
+.container__personaje{
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+
+.contenido{
+
+  gap: 15px;
+  align-items: center;
+
+}
+
